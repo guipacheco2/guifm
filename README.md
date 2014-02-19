@@ -21,3 +21,5 @@ $ cd guifm
 $ meteor
 => Meteor server running on: http://localhost:3000/
 ```
+
+Enjoy!
