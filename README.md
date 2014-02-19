@@ -3,7 +3,7 @@ guifm
 
 Music player made with [Meteor](http://meteor.com), [Rdio API](http://rdio.com) and [Echonest](http://echonest.com).
 
-It's a music player that plays songs from Rdio. 
+It's a music player that plays songs from Rdio.  
 With at least five songs in the playlist, the player starts auto suggestions of songs based on artists and songs played.
 
 # Quick start
