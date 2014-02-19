@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.fa-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -35px;
+}
+
+.box-text {
+  background: #2b2d32;
+  padding: 0px 80px 0px 35px;
+  border: 1px solid #33363b;
+  color: #fff;
+}
+
+.container {
+  max-width: 678px;
+}
+
+.player {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+}
+.player-button {
+  display: inline-block;
+  background-color: #333;
+  border-radius: 100px;
+  box-shadow: 0px 0px 4px #555,
+  0px 0px 10px #222 inset;
+  cursor: pointer;
+}
+.player-button .fa {
+  padding: 10px 15px 10px 15px;
+}
+.player .playpause {
+  background-color: #252525;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -27px;
+  top: -10px;
+}
+.fa-fast-forward {
+  margin-left: 50px;
+}
+
+.panel-guifm {
+  position: relative;
+  background: transparent;
+}
+.panel-guifm .panel-heading {
+  background-color: rgba(62, 68, 76, 0.7);
+}
+.panel-guifm .list-group {
+  max-height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.panel-guifm .list-group-item {
+  background-color: rgba(50, 56, 62, 0.7);
+}
+
+.list-group-item button {
+  visibility: hidden;
+}
+
+.list-group-item:hover button,
+.list-group-item.active button,
+.list-group-item.active:hover button,
+.list-group-item.active:focus button {
+  visibility: visible;
+}
+
+.playSong {
+  margin-right: 10px;
+}
+
+.list-group-item:hover,
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: rgba(62, 68, 76, 0.9);
+}
+
+.frequencies {
+  height: 64px;
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+}
+.frequency {
+  width: 4px;
+  margin: 1px;
+  background-color: rgb(44, 255, 187);
+  float: left;
+}
+
+.jspArrow{
+  background: #5b5b5b;
+}
+.jspCorner{
+  background: #ccc;
+}
+.jspTrack{
+  background: transparent;
+}
+.jspDrag{
+  background: #5b5b5b;
+}
+.jspHorizontalBar .jspArrow{
+  height: 10px;
+}
+.jspHorizontalBar{
+  visibility: hidden;
+}
+.jspVerticalBar{
+  width: 5px;
+  background: 0;
+}
+.jspPane{
+  overflow: hidden;
+}
+.scroll-busca .jspPane li{
+  overflow: hidden;
+  line-height: 30px;
+}

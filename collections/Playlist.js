@@ -1,0 +1,1 @@
+this.Playlist = new Meteor.Collection(null);

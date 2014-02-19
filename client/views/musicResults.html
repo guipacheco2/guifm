@@ -1,0 +1,68 @@
+<template name="musicResults">
+  <div id="modalResults" class="modal" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-times"></i>
+          </button>
+          <h4 class="modal-title">Resultados</h4>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#musicas" id="tabMusicas" data-toggle="tab">Músicas</a></li>
+            <li><a href="#artistas" id="tabArtistas" data-toggle="tab">Artístas</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="musicas">
+              <ul class="list-group">
+                {{#each songs}}
+                <li class="list-group-item">
+                  <button class="btn btn-success pull-right addSong">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <h4 class="list-group-item-heading">{{title}}</h4>
+                  <p class="list-group-item-text">{{artist_name}}</p>
+                </li>
+                {{else}}
+                {{> noResults}}
+                {{/each}}
+              </ul>
+            </div>
+            <div class="tab-pane" id="artistas">
+              {{#if artistSongs}}
+              <button id="getArtistsList" class="btn btn-info btn-sm btn-block">Voltar para lista de artistas</button>
+              <ul class="list-group">
+                {{#each artistSongs}}
+                <li class="list-group-item">
+                  <button class="btn btn-success pull-right addSong">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <h4 class="list-group-item-heading">{{title}}</h4>
+                  <p class="list-group-item-text">{{artist_name}}</p>
+                </li>
+                {{else}}
+                {{> noResults}}
+                {{/each}}
+              </ul>
+              {{else}}
+              <ul class="list-group">
+                {{#each artists}}
+                <li class="list-group-item">
+                  <button class="btn btn-info btn-sm pull-right getArtistSongs">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <h3 class="list-group-item-heading">{{name}}</h3>
+                </li>
+                {{else}}
+                {{> noResults}}
+                {{/each}}
+              </ul>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

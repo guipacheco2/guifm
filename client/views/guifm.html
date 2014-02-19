@@ -1,0 +1,28 @@
+<template name="guifm">
+  {{#unless rdioReady}}
+  <i class="fa fa-spinner fa-spin fa-5x"></i>
+  {{else}}
+  <div class="container">
+    <div id="guifm" class="panel panel-default panel-guifm">
+      <div id="player" class="panel-heading">
+        <div class="row">
+          <div class="col-sm-4">
+            {{> player}}
+          </div>
+          <div class="col-sm-8">
+            {{> musicSearch}}
+          </div>
+        </div>
+        {{#if zeroResults}}
+        {{> noResults}}
+        {{/if}}
+      </div>
+      {{> playlist}}
+    </div>
+  </div>
+
+  {{#with showResults}}
+  {{> musicResults}}
+  {{/with}}
+  {{/unless}}
+</template>

@@ -1,0 +1,15 @@
+<template name="player">
+  <div class="player">
+    <div class="player-button">
+      <i id="previous" class="fa fa-fast-backward"></i>
+      <i id="next" class="fa fa-fast-forward"></i>
+    </div>
+    <div class="playpause player-button">
+      {{#if isPlaying}}
+      <i id="pause" class="fa fa-pause"></i>
+      {{else}}
+      <i id="play" class="fa fa-play"></i>
+      {{/if}}
+    </div>
+  </div>
+</template>

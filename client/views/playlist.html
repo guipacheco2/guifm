@@ -1,0 +1,16 @@
+<template name="playlist">
+  <ul id="playlist" class="list-group">
+    {{#each songs}}
+    <li id="{{rdioId}}" class="list-group-item">
+      <button class="btn btn-danger btn-xs removeSong pull-right">
+        <i class="fa fa-times"></i>
+      </button>
+      <button class="btn btn-primary playSong pull-left">
+        <i class="fa fa-play"></i>
+      </button>
+      <h4 class="list-group-item-heading">{{title}}</h4>
+      <p class="list-group-item-text">{{artist_name}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</template>
